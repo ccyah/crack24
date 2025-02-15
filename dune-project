@@ -5,22 +5,13 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github ccyah/crack24))
 
-(authors "Author Name")
-
-(maintainers "Maintainer Name")
-
-(license LICENSE)
-
-(documentation https://url/to/documentation)
+(authors "ccy")
 
 (package
+ (allow_empty)
  (name crack24)
- (synopsis "A short synopsis")
- (description "A longer description")
- (depends ocaml dune)
- (tags
-  (topics "to describe" your project)))
+ (depends ocaml dune))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
