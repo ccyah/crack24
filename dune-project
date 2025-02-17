@@ -1,4 +1,4 @@
-(lang dune 3.15)
+(lang dune 3.17)
 
 (name crack24)
 
@@ -7,11 +7,16 @@
 (source
  (github ccyah/crack24))
 
-(authors "ccy")
+(authors "ccy <ccccy 096@gmail.com>")
+
+(license MIT)
+
+; (documentation https://url/to/documentation)
 
 (package
- (allow_empty)
  (name crack24)
- (depends ocaml dune))
+ (synopsis "24 game cracker")
+ (depends ocaml)
+ )
 
-; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
+; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html

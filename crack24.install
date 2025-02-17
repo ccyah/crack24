@@ -1,8 +1,0 @@
-lib: [
-  "_build/install/default/lib/crack24/META"
-  "_build/install/default/lib/crack24/dune-package"
-  "_build/install/default/lib/crack24/opam"
-]
-doc: [
-  "_build/install/default/doc/crack24/README.md"
-]

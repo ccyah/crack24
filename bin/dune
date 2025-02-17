@@ -1,0 +1,4 @@
+(executable
+ (public_name crack24)
+ (name main)
+ (libraries crack24))
