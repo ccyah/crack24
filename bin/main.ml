@@ -19,12 +19,14 @@ let anon_fun _ = failwith "Please use the flags! See --help for usage."
 
 let () =
   Arg.parse speclist anon_fun usage_msg;
-  if !nums = [] then failwith "No numbers provided. See --help for usage.";
-  Printf.printf "Target: %d\nNumbers: " !target;
-  List.iter (Printf.printf "%d ") !nums;
-  print_newline ();
-  match Crack24.Solver.it_takes_two !target !nums with
-  | [] -> print_endline "No possible path found."
-  | paths ->
-      print_endline "All possible paths:";
-      List.iter (fun path -> Printf.printf "%s%d\n" path !target) paths
+  match !nums with
+  | [] -> failwith "No numbers provided. See --help for usage."
+  | _ -> (
+      Printf.printf "Target: %d\nNumbers: " !target;
+      List.iter (Printf.printf "%d ") !nums;
+      print_newline ();
+      match Crack24.Solver.it_takes_two !target !nums with
+      | [] -> print_endline "No possible path found."
+      | paths ->
+          print_endline "All possible paths:";
+          List.iter (fun path -> Printf.printf "%s%d\n" path !target) paths)
