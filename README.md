@@ -2,9 +2,9 @@
 
 A 24-game cracker implemented with minimal dependencies.
 
-It generates all possible combinations of the "+", "-", "*", and "/" operations on a set of input integers, aiming to reach the target integer (typically 24).
+It effciently (to my best efforts) generates all possible combinations of the "+", "-", "\*", and "/" operations on a set of input integers, aiming to reach the target integer (typically 24).
 
-It's a toy project for me to learn ocaml. Not much codes or tests but a lot of trial and err. 
+It's a toy project for me to learn ocaml. Not much codes or tests but a lot of trial and err.
 
 ## Usage
 
